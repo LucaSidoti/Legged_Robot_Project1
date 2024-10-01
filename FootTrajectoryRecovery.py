@@ -9,8 +9,6 @@ class FootTrajectoryRecovery:
         self.leftFirst_ = True
         self.height_ = maximumStepHeight
         pass
-
-
    
     def getSwingFootTrajectory(self,footPoseStart,footPoseEnd,time):
         coefs = self.polynomial(footPoseStart[0],footPoseEnd[0], self.height_,self.tStep_)
